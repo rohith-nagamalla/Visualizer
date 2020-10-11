@@ -7,14 +7,20 @@ import matplotlib.pyplot as plt
 
 def plot2(li,option):
     if option==9:
-        t,v,u = ASK(li)
-        plt.subplot(2,1,1)
+        t,v,u,x = ASK(li)
+        plt.subplot(3,1,1)
         plt.plot(t,u)
         plt.xlabel('Time')
         plt.ylabel('Amplitude')
         plt.title('Square wave Pulses')
         plt.grid(True)
-        plt.subplot(2,1,2)
+        plt.subplot(3,1,2)
+        plt.plot(t,x)
+        plt.xlabel('Time')
+        plt.ylabel('Amplitude')
+        plt.title('Carrier Signal')
+        plt.grid(True)        
+        plt.subplot(3,1,3)
         plt.plot(t,v)
         plt.xlabel('Time')
         plt.ylabel('Amplitude')
@@ -23,14 +29,20 @@ def plot2(li,option):
         plt.show()
 
     elif option==10:
-        t,v,u = FSK(li)
-        plt.subplot(2,1,1)
+        t,v,u,x = FSK(li)
+        plt.subplot(3,1,1)
         plt.plot(t,u)
         plt.xlabel('Time')
         plt.ylabel('Amplitude')
         plt.title('Square wave Pulses')
         plt.grid(True)
-        plt.subplot(2,1,2)
+        plt.subplot(3,1,2)
+        plt.plot(t,x)
+        plt.xlabel('Time')
+        plt.ylabel('Amplitude')
+        plt.title('Carrier Signal')
+        plt.grid(True)
+        plt.subplot(3,1,3)
         plt.plot(t,v)
         plt.xlabel('Time')
         plt.ylabel('Amplitude')
@@ -40,14 +52,20 @@ def plot2(li,option):
 
 
     else:
-        t,v,u = PSK(li)
-        plt.subplot(2,1,1)
+        t,v,u,x = PSK(li)
+        plt.subplot(3,1,1)
         plt.plot(t,u)
         plt.xlabel('Time')
         plt.ylabel('Amplitude')
         plt.title('Square wave Pulses')
         plt.grid(True)
-        plt.subplot(2,1,2)
+        plt.subplot(3,1,2)
+        plt.plot(t,x)
+        plt.xlabel('Time')
+        plt.ylabel('Amplitude')
+        plt.title('Carrier Signal')
+        plt.grid(True)
+        plt.subplot(3,1,3)
         plt.plot(t,v)
         plt.xlabel('Time')
         plt.ylabel('Amplitude')
@@ -55,11 +73,4 @@ def plot2(li,option):
         plt.grid(True)
         plt.show()    
 
-
-# print("Enter the size of Encoded Data : ")
-# size=int(input())
-# li=[]
-# print('Enter the binary bits sequnce of length ',size,' bits : \n')
-# for i in range(size):
-#     li.append(int(input()))
-# plot2(li)    
+    
