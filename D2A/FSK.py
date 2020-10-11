@@ -24,9 +24,9 @@ v=[]                                                        # carrier wave multi
 
 for i in range(len(t)):
     if(u[i]==1):
-        v.append(A*num.sin(2*num.pi*F1*t[i]))               # if the signal is 1, then higher frequency f+f/2
+        v.append(A*num.sin(3*num.pi*F1*t[i]))               # if the signal is 1, then higher frequency f+f/2
     else:
-        v.append(A*num.sin(2*num.pi*F1*t[i])*(-1))          # else lower frequncy f-f/2
+        v.append(A*num.sin(1*num.pi*F1*t[i]))               # else lower frequncy f-f/2
 
 
 #PLOTTING MESSAGE CARRIER AND FSK
