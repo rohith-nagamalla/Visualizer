@@ -6,6 +6,12 @@
 
 Visualising some of the line encoding schemes and the modulations schemes.
 
+### Running the Code
+Type the following command in cmd:
+```batch
+python main.py    
+```
+
 ### Contributors of the Project
 + Barad Dheeraj Bharadwaj(B18CSE009)
 + Nagamalla Rohith(B18CSE065)
