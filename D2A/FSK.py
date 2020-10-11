@@ -86,4 +86,4 @@ def FSK(input_digital_signal):
         else:
             v.append(A*num.sin(1*num.pi*F1*t[i]))               # else lower frequncy f-f/2
 
-    return [t,v]  
+    return [t,v,u]  

@@ -83,6 +83,6 @@ def PSK(input_digital_signal):
             v.append(A*num.sin(2*num.pi*F1*t[i]))               # if the signal is 1, then higher frequency f+f/2
         else:
             v.append(A*num.sin(2*num.pi*F1*t[i])*(-1))          # else lower frequncy f-f/2
-    return [t,v]
+    return [t,v,u]
 
 

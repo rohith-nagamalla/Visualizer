@@ -5,33 +5,55 @@ from D2A.FSK import FSK
 import matplotlib.pyplot as plt
 
 
-def plot2(li):
-    t,v = ASK(li)
-    plt.plot(t,v)
-    plt.xlabel('Time')
-    plt.ylabel('Amplitude')
-    plt.title('ASK Signal')
-    plt.grid(True)
-    plt.show()
+def plot2(li,option):
+    if option==9:
+        t,v,u = ASK(li)
+        plt.subplot(2,1,1)
+        plt.plot(t,u)
+        plt.xlabel('Time')
+        plt.ylabel('Amplitude')
+        plt.title('Square wave Pulses')
+        plt.grid(True)
+        plt.subplot(2,1,2)
+        plt.plot(t,v)
+        plt.xlabel('Time')
+        plt.ylabel('Amplitude')
+        plt.title('ASK Signal')
+        plt.grid(True)
+        plt.show()
+
+    elif option==10:
+        t,v,u = FSK(li)
+        plt.subplot(2,1,1)
+        plt.plot(t,u)
+        plt.xlabel('Time')
+        plt.ylabel('Amplitude')
+        plt.title('Square wave Pulses')
+        plt.grid(True)
+        plt.subplot(2,1,2)
+        plt.plot(t,v)
+        plt.xlabel('Time')
+        plt.ylabel('Amplitude')
+        plt.title('FSK Signal')
+        plt.grid(True)
+        plt.show()
 
 
-    t,v = FSK(li)
-    plt.plot(t,v)
-    plt.xlabel('Time')
-    plt.ylabel('Amplitude')
-    plt.title('FSK Signal')
-    plt.grid(True)
-    plt.show()
-
-
-
-    t,v = PSK(li)
-    plt.plot(t,v)
-    plt.xlabel('Time')
-    plt.ylabel('Amplitude')
-    plt.title('PSK Signal')
-    plt.grid(True)
-    plt.show()    
+    else:
+        t,v,u = PSK(li)
+        plt.subplot(2,1,1)
+        plt.plot(t,u)
+        plt.xlabel('Time')
+        plt.ylabel('Amplitude')
+        plt.title('Square wave Pulses')
+        plt.grid(True)
+        plt.subplot(2,1,2)
+        plt.plot(t,v)
+        plt.xlabel('Time')
+        plt.ylabel('Amplitude')
+        plt.title('PSK Signal')
+        plt.grid(True)
+        plt.show()    
 
 
 # print("Enter the size of Encoded Data : ")

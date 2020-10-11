@@ -81,4 +81,4 @@ def ASK(input_digital_signal):
     for i in range(len(t)):
         v.append(A*num.sin(2*num.pi*F1*t[i])*u[i])              # multiplying the digital message with the carrier
 
-    return [t,v]    
+    return [t,v,u]    
