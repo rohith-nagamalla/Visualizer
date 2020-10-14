@@ -7,7 +7,7 @@ option=int(input())
 print("Enter the size of Encoded Data : ")
 size=int(input())
 li=[]
-print('Enter the binary bits sequnce of length ',size,' bits : \n')
+print('Enter the binary bits sequnce of length ',size,' bits : (enter each bit on a new line)')
 for i in range(size):
     li.append(int(input()))
 if option<=8:

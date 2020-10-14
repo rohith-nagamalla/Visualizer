@@ -9,9 +9,12 @@ from D2D.ami import AMI
 import matplotlib.pyplot as plt
 
 def plot(li,option):
+    display = list(li)
+    display.insert(0,0)
+    display = [0 if i==0 else 1 for i in display]
     plt.subplot(2,1,1)
     plt.ylabel("INPUT")
-    plt.plot(li,color='red',drawstyle='steps-pre',marker='>')
+    plt.plot(display,color='red',drawstyle='steps-pre',marker='>')
     if option==1:
         plt.subplot(2,1,2)
         plt.ylabel("Unipolar-NRZ")

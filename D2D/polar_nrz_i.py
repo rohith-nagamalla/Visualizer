@@ -1,5 +1,6 @@
 def polar_nrz_i(input_digital_signal):
     digital_signal=list(input_digital_signal)
+    digital_signal.insert(0,0)
     lock=False
     for i in range(len(digital_signal)):
         if digital_signal[i]==1 and not lock:
