@@ -10,7 +10,7 @@ li=[]
 print('Enter the binary bits sequnce of length ',size,' bits : (enter each bit on a new line)')
 for i in range(size):
     li.append(int(input()))
-if option<=8:
+if option<8:
     plot(li,option)
 else:
     plot2(li,option)
