@@ -5,4 +5,5 @@ def polar_rz(input_digital_signal):
     for i in range(len(digital_signal)):
         output_digital_signal.append(digital_signal[i])
         output_digital_signal.append(0)
+    output_digital_signal.insert(0,0)
     return output_digital_signal

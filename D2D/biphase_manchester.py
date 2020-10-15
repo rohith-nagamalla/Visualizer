@@ -11,4 +11,5 @@ def Biphase_manchester(input_digital_signal):
         elif digital_signal[i]==1 :
             output_digital_signal.append(1)
             output_digital_signal.append(-1)
+    # output_digital_signal.insert(0,0)
     return output_digital_signal 
