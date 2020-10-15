@@ -11,6 +11,15 @@ Type the following command in cmd:
 ```batch
 python main.py    
 ```
+Encoding schemes demonstrated are:
+- Unipolar - NRZ
+- Polar - NRZ, RZ and biphase(Manchester and differential-manchester)
+- Bipolar - AMI
+
+Digital to Analog modulation schemes demonstrated are:
+- ASK
+- PSK
+- FSK
 
 ### Contributors of the Project
 + Barad Dheeraj Bharadwaj(B18CSE009)
