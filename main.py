@@ -7,7 +7,7 @@ option=int(input())
 print("Enter the size of Encoded Data : ")
 size=int(input())
 li=[]
-print('Enter the binary bits sequnce of length ',size,' bits : (enter each bit on a new line)')
+print('Enter the binary bits sequnce of length ',size,' bits : (enter the bits of the digital signal as a string)')
 temp=input()
 while not len(temp)==size:
     print('Enter a valid input:')

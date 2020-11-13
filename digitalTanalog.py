@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 
 def plot2(li,option):
-    if option==9:
+    if option==8:
         t,v,u,x = ASK(li)
         plt.subplot(3,1,1)
         plt.plot(t,u)
@@ -28,7 +28,7 @@ def plot2(li,option):
         plt.grid(True)
         plt.show()
 
-    elif option==10:
+    elif option==9:
         t,v,u,x = FSK(li)
         plt.subplot(3,1,1)
         plt.plot(t,u)
