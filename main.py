@@ -8,8 +8,12 @@ print("Enter the size of Encoded Data : ")
 size=int(input())
 li=[]
 print('Enter the binary bits sequnce of length ',size,' bits : (enter each bit on a new line)')
+temp=input()
+while not len(temp)==size:
+    print('Enter a valid input:')
+    temp=input()
 for i in range(size):
-    li.append(int(input()))
+    li.append(int(temp[i]))
 if option<8:
     plot(li,option)
 else:
