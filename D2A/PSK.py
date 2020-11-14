@@ -5,7 +5,7 @@ import numpy as num
 def PSK(input_digital_signal):
     digital_signal=list(input_digital_signal)
     
-    F1=6
+    F1=5
     A=2
     siz = len(input_digital_signal)
     
