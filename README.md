@@ -14,7 +14,7 @@ python visualizer.py
 Encoding schemes demonstrated are:
 - Unipolar - NRZ
 - Polar - NRZ, RZ and biphase(Manchester and differential-manchester)
-- Bipolar - AMI
+- Bipolar - AMI, Psuedoternary
 
 Digital to Analog modulation schemes demonstrated are:
 - ASK
