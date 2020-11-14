@@ -5,6 +5,7 @@ from D2D.polar_rz import polar_rz
 from D2D.biphase_manchester import Biphase_manchester
 from D2D.differential_manchester import Differential_manchester
 from D2D.ami import AMI
+from D2D.pt import pt
 
 import matplotlib.pyplot as plt
 
@@ -52,9 +53,15 @@ def plot(li,option):
         plt.plot(Differential_manchester(li),drawstyle='steps-pre',marker='>')
         plt.grid(True)
         plt.show()
-    else:
+    elif option==7:
         plt.subplot(2,1,2)
         plt.ylabel("A-M-I")
         plt.plot(AMI(li),drawstyle='steps-pre',marker='>')
+        plt.grid(True)
+        plt.show()
+    else:
+        plt.subplot(2,1,2)
+        plt.ylabel("Pseudoternary")
+        plt.plot(pt(li),drawstyle='steps-pre',marker='>')
         plt.grid(True)
         plt.show()
